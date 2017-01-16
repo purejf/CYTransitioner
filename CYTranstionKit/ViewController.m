@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
+#import "UIViewController+CY.h"
+#import "CYTransitionConfiguration.h"
 
 @interface ViewController ()
 
@@ -16,14 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    SecondViewController *v = (SecondViewController *)segue.destinationViewController;
+    CYTransitionConfiguration *con = [CYTransitionConfiguration new];
+    con.type = CYTransitionTypeReveal;
+    con.subtype = CYTransitionDirectionFromRight;
+    v.con = con;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

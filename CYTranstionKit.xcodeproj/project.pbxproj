@@ -15,6 +15,11 @@
 		562B76FA1E2C853900999084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562B76F81E2C853900999084 /* LaunchScreen.storyboard */; };
 		562B77051E2C853A00999084 /* CYTranstionKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B77041E2C853A00999084 /* CYTranstionKitTests.m */; };
 		562B77101E2C853A00999084 /* CYTranstionKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B770F1E2C853A00999084 /* CYTranstionKitUITests.m */; };
+		562B77201E2C855200999084 /* UIViewController+CY.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B771F1E2C855200999084 /* UIViewController+CY.m */; };
+		562B77261E2C8B9B00999084 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B77251E2C8B9B00999084 /* SecondViewController.m */; };
+		562B77391E2CC3C700999084 /* UINavigationController+CY.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B77381E2CC3C700999084 /* UINavigationController+CY.m */; };
+		562B773C1E2CC54800999084 /* CYTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B773B1E2CC54800999084 /* CYTransitioner.m */; };
+		562B773F1E2CC5ED00999084 /* CYTransitionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B773E1E2CC5ED00999084 /* CYTransitionConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		562B770B1E2C853A00999084 /* CYTranstionKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYTranstionKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		562B770F1E2C853A00999084 /* CYTranstionKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTranstionKitUITests.m; sourceTree = "<group>"; };
 		562B77111E2C853A00999084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		562B771E1E2C855200999084 /* UIViewController+CY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CY.h"; sourceTree = "<group>"; };
+		562B771F1E2C855200999084 /* UIViewController+CY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CY.m"; sourceTree = "<group>"; };
+		562B77241E2C8B9B00999084 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		562B77251E2C8B9B00999084 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		562B77371E2CC3C700999084 /* UINavigationController+CY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CY.h"; sourceTree = "<group>"; };
+		562B77381E2CC3C700999084 /* UINavigationController+CY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CY.m"; sourceTree = "<group>"; };
+		562B773A1E2CC54800999084 /* CYTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTransitioner.h; sourceTree = "<group>"; };
+		562B773B1E2CC54800999084 /* CYTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTransitioner.m; sourceTree = "<group>"; };
+		562B773D1E2CC5ED00999084 /* CYTransitionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTransitionConfiguration.h; sourceTree = "<group>"; };
+		562B773E1E2CC5ED00999084 /* CYTransitionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTransitionConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,13 @@
 		562B76E91E2C853900999084 /* CYTranstionKit */ = {
 			isa = PBXGroup;
 			children = (
+				562B771D1E2C854700999084 /* CY */,
 				562B76ED1E2C853900999084 /* AppDelegate.h */,
 				562B76EE1E2C853900999084 /* AppDelegate.m */,
 				562B76F01E2C853900999084 /* ViewController.h */,
 				562B76F11E2C853900999084 /* ViewController.m */,
+				562B77241E2C8B9B00999084 /* SecondViewController.h */,
+				562B77251E2C8B9B00999084 /* SecondViewController.m */,
 				562B76F31E2C853900999084 /* Main.storyboard */,
 				562B76F61E2C853900999084 /* Assets.xcassets */,
 				562B76F81E2C853900999084 /* LaunchScreen.storyboard */,
@@ -138,6 +156,21 @@
 				562B77111E2C853A00999084 /* Info.plist */,
 			);
 			path = CYTranstionKitUITests;
+			sourceTree = "<group>";
+		};
+		562B771D1E2C854700999084 /* CY */ = {
+			isa = PBXGroup;
+			children = (
+				562B773D1E2CC5ED00999084 /* CYTransitionConfiguration.h */,
+				562B773E1E2CC5ED00999084 /* CYTransitionConfiguration.m */,
+				562B773A1E2CC54800999084 /* CYTransitioner.h */,
+				562B773B1E2CC54800999084 /* CYTransitioner.m */,
+				562B771E1E2C855200999084 /* UIViewController+CY.h */,
+				562B771F1E2C855200999084 /* UIViewController+CY.m */,
+				562B77371E2CC3C700999084 /* UINavigationController+CY.h */,
+				562B77381E2CC3C700999084 /* UINavigationController+CY.m */,
+			);
+			path = CY;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562B773C1E2CC54800999084 /* CYTransitioner.m in Sources */,
+				562B77261E2C8B9B00999084 /* SecondViewController.m in Sources */,
+				562B77201E2C855200999084 /* UIViewController+CY.m in Sources */,
 				562B76F21E2C853900999084 /* ViewController.m in Sources */,
 				562B76EF1E2C853900999084 /* AppDelegate.m in Sources */,
+				562B773F1E2CC5ED00999084 /* CYTransitionConfiguration.m in Sources */,
 				562B76EC1E2C853900999084 /* main.m in Sources */,
+				562B77391E2CC3C700999084 /* UINavigationController+CY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +545,7 @@
 				562B77161E2C853A00999084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		562B77171E2C853A00999084 /* Build configuration list for PBXNativeTarget "CYTranstionKitTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +554,7 @@
 				562B77191E2C853A00999084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		562B771A1E2C853A00999084 /* Build configuration list for PBXNativeTarget "CYTranstionKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +563,7 @@
 				562B771C1E2C853A00999084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

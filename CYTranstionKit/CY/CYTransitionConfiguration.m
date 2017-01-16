@@ -8,6 +8,40 @@
 
 #import "CYTransitionConfiguration.h"
 
+@interface CYTransitionConfiguration ()
+
+// default is NO
+@property (nonatomic, assign) BOOL transitionEnabled;
+
+@end
+
 @implementation CYTransitionConfiguration
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _type = CYTransitionTypeNone;
+        _subtype = CYTransitionDirectionNone;
+        _duration = 0.5;
+        _mode = CYTransitionModePush;
+        _transitionEnabled = NO;
+    }
+    return self;
+}
+
+- (void)setType:(CYTransitionType)type {
+    _type = type;
+    if (type != CYTransitionTypeNone) {
+        _transitionEnabled = YES;
+    }
+}
+
+- (void)setDuration:(NSTimeInterval)duration {
+    if (duration > 1 || duration == 0) {
+        _duration = 0.5;
+    } else {
+        _duration = duration;
+    }
+}
 
 @end
