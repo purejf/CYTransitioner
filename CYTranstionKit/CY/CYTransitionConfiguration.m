@@ -36,6 +36,13 @@
     }
 }
 
+- (BOOL)transitionEnabled {
+    if (self.type == CYTransitionTypeNone) {
+        return NO;
+    }
+    return _transitionEnabled;
+}
+
 - (void)setDuration:(NSTimeInterval)duration {
     if (duration > 1 || duration == 0) {
         _duration = 0.5;

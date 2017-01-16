@@ -17,7 +17,6 @@
 		562B77101E2C853A00999084 /* CYTranstionKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B770F1E2C853A00999084 /* CYTranstionKitUITests.m */; };
 		562B77201E2C855200999084 /* UIViewController+CY.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B771F1E2C855200999084 /* UIViewController+CY.m */; };
 		562B77261E2C8B9B00999084 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B77251E2C8B9B00999084 /* SecondViewController.m */; };
-		562B77391E2CC3C700999084 /* UINavigationController+CY.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B77381E2CC3C700999084 /* UINavigationController+CY.m */; };
 		562B773C1E2CC54800999084 /* CYTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B773B1E2CC54800999084 /* CYTransitioner.m */; };
 		562B773F1E2CC5ED00999084 /* CYTransitionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B773E1E2CC5ED00999084 /* CYTransitionConfiguration.m */; };
 /* End PBXBuildFile section */
@@ -60,8 +59,6 @@
 		562B771F1E2C855200999084 /* UIViewController+CY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CY.m"; sourceTree = "<group>"; };
 		562B77241E2C8B9B00999084 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		562B77251E2C8B9B00999084 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		562B77371E2CC3C700999084 /* UINavigationController+CY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CY.h"; sourceTree = "<group>"; };
-		562B77381E2CC3C700999084 /* UINavigationController+CY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CY.m"; sourceTree = "<group>"; };
 		562B773A1E2CC54800999084 /* CYTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTransitioner.h; sourceTree = "<group>"; };
 		562B773B1E2CC54800999084 /* CYTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTransitioner.m; sourceTree = "<group>"; };
 		562B773D1E2CC5ED00999084 /* CYTransitionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTransitionConfiguration.h; sourceTree = "<group>"; };
@@ -167,8 +164,6 @@
 				562B773B1E2CC54800999084 /* CYTransitioner.m */,
 				562B771E1E2C855200999084 /* UIViewController+CY.h */,
 				562B771F1E2C855200999084 /* UIViewController+CY.m */,
-				562B77371E2CC3C700999084 /* UINavigationController+CY.h */,
-				562B77381E2CC3C700999084 /* UINavigationController+CY.m */,
 			);
 			path = CY;
 			sourceTree = "<group>";
@@ -313,7 +308,6 @@
 				562B76EF1E2C853900999084 /* AppDelegate.m in Sources */,
 				562B773F1E2CC5ED00999084 /* CYTransitionConfiguration.m in Sources */,
 				562B76EC1E2C853900999084 /* main.m in Sources */,
-				562B77391E2CC3C700999084 /* UINavigationController+CY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

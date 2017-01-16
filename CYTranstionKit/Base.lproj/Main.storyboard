@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
-                                    <segue destination="4yr-iV-ZAi" kind="presentation" id="kSb-rY-yd9"/>
+                                    <segue destination="4yr-iV-ZAi" kind="push" id="kSb-rY-yd9"/>
                                 </connections>
                             </button>
                         </subviews>

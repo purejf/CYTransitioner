@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class CYTransitionConfiguration;
 
 @interface UIViewController (CY) <UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, strong) CYTransitionConfiguration *con;
+
+@end
+
+@interface UINavigationController (CY) <UINavigationControllerDelegate>
 
 @end
