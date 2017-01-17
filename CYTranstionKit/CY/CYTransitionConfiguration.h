@@ -49,7 +49,7 @@ typedef NS_ENUM(NSUInteger, CYTransitionDirection) {
 
 @property (nonatomic, assign) NSTimeInterval duration;
 
-@property (nonatomic, assign) CYTransitionMode mode;
+//@property (nonatomic, assign) CYTransitionMode mode;
 
 // set YES when the type != CYTransitionTypeNone
 // default is NO

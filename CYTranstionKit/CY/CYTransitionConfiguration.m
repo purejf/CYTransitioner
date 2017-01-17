@@ -23,7 +23,7 @@
         _type = CYTransitionTypeNone;
         _subtype = CYTransitionDirectionNone;
         _duration = 0.5;
-        _mode = CYTransitionModePush;
+//        _mode = CYTransitionModePush;
         _transitionEnabled = NO;
     }
     return self;
@@ -37,7 +37,7 @@
 }
 
 - (BOOL)transitionEnabled {
-    if (self.type == CYTransitionTypeNone) {
+    if (_type == CYTransitionTypeNone) {
         return NO;
     }
     return _transitionEnabled;

@@ -10,7 +10,7 @@
 
 @class CYTransitionConfiguration;
 
-@interface UIViewController (CY) <UIViewControllerTransitioningDelegate>
+@interface UIViewController (CY) <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) CYTransitionConfiguration *con;
 

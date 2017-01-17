@@ -24,7 +24,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     SecondViewController *v = (SecondViewController *)segue.destinationViewController;
     CYTransitionConfiguration *con = [CYTransitionConfiguration new];
-    con.type = CYTransitionTypeCube;
+    con.type = CYTransitionTypePageCurl;
     con.subtype = CYTransitionDirectionFromRight;
     v.con = con;
 }
